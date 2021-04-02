@@ -1,0 +1,11 @@
+#0000
+<END
+
+Run ALU
+#0100
+<END
+
+Increment AP
+#0200
+<END
+Decrement AP

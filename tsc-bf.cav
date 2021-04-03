@@ -1,0 +1,639 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CaveStoryMod>
+  <Paths>
+    <DataPath>data</DataPath>
+    <StageFolder>Stage</StageFolder>
+    <ScriptFolder>Stage</ScriptFolder>
+    <NpcFolder>Npc</NpcFolder>
+  </Paths>
+  <StageTable>
+    <Location>Doukutsu.exe</Location>
+    <Type>csmap</Type>
+    <StageTableSettings>
+      <BackgroundTypeType>System.Int32</BackgroundTypeType>
+      <BossNumberType>System.SByte</BossNumberType>
+      <FilenameEncoding>us-ascii</FilenameEncoding>
+      <MapNameEncoding>us-ascii</MapNameEncoding>
+      <JapaneseNameEncoding>shift_jis</JapaneseNameEncoding>
+      <TilesetNameBuffer>32</TilesetNameBuffer>
+      <FilenameBuffer>32</FilenameBuffer>
+      <BackgroundNameBuffer>32</BackgroundNameBuffer>
+      <Spritesheet1Buffer>32</Spritesheet1Buffer>
+      <Spritesheet2Buffer>32</Spritesheet2Buffer>
+      <JapaneseNameBuffer>0</JapaneseNameBuffer>
+      <MapNameBuffer>32</MapNameBuffer>
+      <Padding>3</Padding>
+    </StageTableSettings>
+  </StageTable>
+  <TileSize>16</TileSize>
+  <Images>
+    <TransparentColor>Black</TransparentColor>
+    <CopyrightText>(C)Pixel</CopyrightText>
+  </Images>
+  <Filenames>
+    <TilesetPrefix>Prt</TilesetPrefix>
+    <SpritesheetPrefix>Npc</SpritesheetPrefix>
+    <StageExtension>pxm</StageExtension>
+    <EntityExtension>pxe</EntityExtension>
+    <ImageExtension>bmp</ImageExtension>
+    <TSCExtension>tsc</TSCExtension>
+    <AttributeExtension>pxa</AttributeExtension>
+  </Filenames>
+  <TSC>
+    <TSCEncrypted>true</TSCEncrypted>
+    <DefaultKey>7</DefaultKey>
+    <TSCEncoding>us-ascii</TSCEncoding>
+  </TSC>
+  <Gameplay>
+    <ScreenWidth>320</ScreenWidth>
+    <ScreenHeight>240</ScreenHeight>
+  </Gameplay>
+  <EntityInfoList>
+    <EntityInfo Key="0" Name="Null" Rect="0,0,0,0" />
+    <EntityInfo Key="1" Name="EXP" Rect="0,16,16,16" />
+    <EntityInfo Key="2" Name="Behemoth (enemy)" Rect="0,0,32,24" />
+    <EntityInfo Key="3" Name="Null, spawned upon NPC death, disappears" Rect="0,0,0,0" />
+    <EntityInfo Key="4" Name="Smoke" Rect="64,0,16,16" />
+    <EntityInfo Key="5" Name="Critter, Hopping Green (enemy)" Rect="0,47,16,15" />
+    <EntityInfo Key="6" Name="Beetle, Horizontal Green (enemy)" Rect="0,80,16,16" />
+    <EntityInfo Key="7" Name="Basil (enemy)" Rect="256,64,24,19" />
+    <EntityInfo Key="8" Name="Beetle, Follow Green (enemy)" Rect="80,80,16,16" />
+    <EntityInfo Key="9" Name="Balrog, falling" Rect="0,0,40,24" />
+    <EntityInfo Key="10" Name="Balrog, Shooting (boss)" Rect="0,0,40,24" />
+    <EntityInfo Key="11" Name="Balrog energy ball invincible (projectile)" Rect="240,80,16,16" />
+    <EntityInfo Key="12" Name="Balrog, standing" Rect="0,0,40,24" />
+    <EntityInfo Key="13" Name="Forcefield" Rect="128,0,21,16" />
+    <EntityInfo Key="14" Name="Santa's Key" Rect="225,0,15,16" />
+    <EntityInfo Key="15" Name="Treasure Chest, closed" Rect="240,0,16,16" />
+    <EntityInfo Key="16" Name="Save Point" Rect="96,16,16,16" />
+    <EntityInfo Key="17" Name="Health/Ammo Refill" Rect="288,0,16,16" />
+    <EntityInfo Key="18" Name="Door" Rect="224,16,16,24" />
+    <EntityInfo Key="19" Name="Balrog, busts in" Rect="0,0,40,24" />
+    <EntityInfo Key="20" Name="Computer" Rect="288,16,32,24" />
+    <EntityInfo Key="21" Name="Treasure Chest, open" Rect="224,40,16,8" />
+    <EntityInfo Key="22" Name="Teleporter" Rect="240,16,24,32" />
+    <EntityInfo Key="23" Name="Teleporter lights" Rect="264,32,24,4" />
+    <EntityInfo Key="24" Name="Power Critter (enemy)" Rect="0,0,24,24" />
+    <EntityInfo Key="25" Name="Lift Platform / Elevator" Rect="256,64,34,16" />
+    <EntityInfo Key="26" Name="Bat, Black Circling (enemy)" Rect="32,80,16,16" />
+    <EntityInfo Key="27" Name="Death Spikes" Rect="96,64,32,24" />
+    <EntityInfo Key="28" Name="Critter, Flying Green (enemy)" Rect="48,48,16,16" />
+    <EntityInfo Key="29" Name="Cthulhu" Rect="0,192,16,24" />
+    <EntityInfo Key="30" Name="Hermit Gunsmith" Rect="0,32,16,16" />
+    <EntityInfo Key="31" Name="Bat, Black Hanging (enemy)" Rect="0,79,16,16" />
+    <EntityInfo Key="32" Name="Life Capsule" Rect="32,96,16,16" />
+    <EntityInfo Key="33" Name="Balrog energy ball bouncing (projectile)" Rect="240,80,16,16" />
+    <EntityInfo Key="34" Name="Bed" Rect="192,48,32,16" />
+    <EntityInfo Key="35" Name="Mannan (enemy)" Rect="96,64,24,32" />
+    <EntityInfo Key="36" Name="Balrog, Flying (boss)" Rect="0,0,40,24" />
+    <EntityInfo Key="37" Name="Signpost" Rect="192,64,16,16" />
+    <EntityInfo Key="38" Name="Fireplace" Rect="128,64,16,16" />
+    <EntityInfo Key="39" Name="Cocktail Sign" Rect="224,63,16,17" />
+    <EntityInfo Key="40" Name="Santa" Rect="0,32,16,16" />
+    <EntityInfo Key="41" Name="Busted doorway" Rect="0,0,0,0" />
+    <EntityInfo Key="42" Name="Sue" Rect="0,0,16,16" />
+    <EntityInfo Key="43" Name="Blackboard/Table" Rect="128,80,40,32" />
+    <EntityInfo Key="44" Name="Polish (enemy)" Rect="0,0,32,32" />
+    <EntityInfo Key="45" Name="Baby (enemy)" Rect="16,32,16,16" />
+    <EntityInfo Key="46" Name="H/V Trigger" Rect="0,0,0,0" />
+    <EntityInfo Key="47" Name="Sandcroc, Green (enemy)" Rect="153,47,35,33" />
+    <EntityInfo Key="48" Name="Omega mudball (projectile)" Rect="287,87,16,16" />
+    <EntityInfo Key="49" Name="Skullhead (enemy)" Rect="32,80,32,22" />
+    <EntityInfo Key="50" Name="Bone (projectile)" Rect="48,32,16,16" />
+    <EntityInfo Key="51" Name="Crow &amp; Skullhead (enemy)" Rect="64,80,62,22" />
+    <EntityInfo Key="52" Name="Blue Robot" Rect="256,200,16,16" />
+    <EntityInfo Key="53" Name="Skullstep Leg (enemy)" Rect="0,0,0,0" />
+    <EntityInfo Key="54" Name="Skullstep (enemy)" Rect="32,80,32,22" />
+    <EntityInfo Key="55" Name="Kazuma" Rect="192,192,16,24" />
+    <EntityInfo Key="56" Name="Beetle, Horizontal Brown (enemy)" Rect="0,142,16,16" />
+    <EntityInfo Key="57" Name="Crow (enemy)" Rect="96,80,32,32" />
+    <EntityInfo Key="58" Name="Basu, 1 (enemy)" Rect="192,0,24,24" />
+    <EntityInfo Key="59" Name="Evil Door (enemy)" Rect="208,80,16,24" />
+    <EntityInfo Key="60" Name="Toroko" Rect="0,64,16,16" />
+    <EntityInfo Key="61" Name="King" Rect="224,32,16,16" />
+    <EntityInfo Key="62" Name="Kazuma, facing away" Rect="272,192,16,24" />
+    <EntityInfo Key="63" Name="Toroko, panicking" Rect="64,64,16,16" />
+    <EntityInfo Key="64" Name="Critter, Hopping Blue (enemy)" Rect="0,0,16,16" />
+    <EntityInfo Key="65" Name="Bat, Blue Vertical (enemy)" Rect="32,32,16,16" />
+    <EntityInfo Key="66" Name="Misery bubble (projectile)" Rect="32,216,23,24" />
+    <EntityInfo Key="67" Name="Misery, Flying" Rect="80,0,16,16" />
+    <EntityInfo Key="68" Name="Balrog, Running (boss)" Rect="0,0,40,24" />
+    <EntityInfo Key="69" Name="Pignon (enemy)" Rect="48,0,16,16" />
+    <EntityInfo Key="70" Name="Sparkling Item" Rect="96,48,16,16" />
+    <EntityInfo Key="71" Name="Chinfish (enemy)" Rect="64,32,16,16" />
+    <EntityInfo Key="72" Name="Sprinkler" Rect="224,48,16,16" />
+    <EntityInfo Key="73" Name="Water Drop, 1" Rect="0,0,0,0" />
+    <EntityInfo Key="74" Name="Jack" Rect="64,0,16,16" />
+    <EntityInfo Key="75" Name="Kanpachi" Rect="277,32,24,24" />
+    <EntityInfo Key="76" Name="Flowers" Rect="32,0,16,16" />
+    <EntityInfo Key="77" Name="Sandaime's Pavillion" Rect="0,16,48,32" />
+    <EntityInfo Key="78" Name="Pot" Rect="160,48,16,16" />
+    <EntityInfo Key="79" Name="Mahin" Rect="0,0,16,16" />
+    <EntityInfo Key="80" Name="Gravekeeper (enemy)" Rect="0,64,24,24" />
+    <EntityInfo Key="81" Name="Giant Pignon (enemy)" Rect="144,64,24,24" />
+    <EntityInfo Key="82" Name="Misery, Standing" Rect="112,0,16,16" />
+    <EntityInfo Key="83" Name="Igor, standing" Rect="0,0,40,40" />
+    <EntityInfo Key="84" Name="Basu energy ball, 1 (projectile)" Rect="64,48,16,16" />
+    <EntityInfo Key="85" Name="Terminal" Rect="272,96,15,24" />
+    <EntityInfo Key="86" Name="Missile" Rect="0,80,16,16" />
+    <EntityInfo Key="87" Name="Heart" Rect="32,80,16,16" />
+    <EntityInfo Key="88" Name="Igor (boss)" Rect="0,0,40,40" />
+    <EntityInfo Key="89" Name="Igor, dying" Rect="287,88,21,16" />
+    <EntityInfo Key="90" Name="Background" Rect="0,0,0,0" />
+    <EntityInfo Key="91" Name="Cage" Rect="96,88,32,24" />
+    <EntityInfo Key="92" Name="Sue, facing away" Rect="272,216,16,24" />
+    <EntityInfo Key="93" Name="Chaco" Rect="128,0,16,16" />
+    <EntityInfo Key="94" Name="Kulala (enemy)" Rect="272,0,48,24" />
+    <EntityInfo Key="95" Name="Jelly (enemy)" Rect="192,65,16,16" />
+    <EntityInfo Key="96" Name="Fan, left" Rect="288,120,16,16" />
+    <EntityInfo Key="97" Name="Fan, up" Rect="288,136,16,16" />
+    <EntityInfo Key="98" Name="Fan, right" Rect="288,152,16,16" />
+    <EntityInfo Key="99" Name="Fan, down" Rect="288,168,16,16" />
+    <EntityInfo Key="100" Name="Grate" Rect="272,48,16,16" />
+    <EntityInfo Key="101" Name="Power Controls, screen" Rect="240,136,16,16" />
+    <EntityInfo Key="102" Name="Power Controls, power flow" Rect="208,120,16,16" />
+    <EntityInfo Key="103" Name="Mannan red blast (projectile)" Rect="193,99,16,16" />
+    <EntityInfo Key="104" Name="Frog (enemy)" Rect="0,112,32,32" />
+    <EntityInfo Key="105" Name="Speech balloon 'Hey' low" Rect="128,32,16,16" />
+    <EntityInfo Key="106" Name="Speech balloon 'Hey' high" Rect="128,32,16,16" />
+    <EntityInfo Key="107" Name="Malco" Rect="208,0,16,24" />
+    <EntityInfo Key="108" Name="Balfrog spitball (projectile)" Rect="96,48,14,15" />
+    <EntityInfo Key="109" Name="Malco, damaged" Rect="240,0,16,24" />
+    <EntityInfo Key="110" Name="Puchi (enemy)" Rect="96,128,16,16" />
+    <EntityInfo Key="111" Name="Quote, teleporting out" Rect="0,0,16,16" />
+    <EntityInfo Key="112" Name="Quote, teleporting in" Rect="0,0,16,16" />
+    <EntityInfo Key="113" Name="Professor Booster" Rect="224,0,16,16" />
+    <EntityInfo Key="114" Name="Press (enemy)" Rect="176,112,16,24" />
+    <EntityInfo Key="115" Name="Ravil (enemy)" Rect="0,120,24,24" />
+    <EntityInfo Key="116" Name="Red Flowers" Rect="272,184,48,16" />
+    <EntityInfo Key="117" Name="Curly, standing" Rect="0,96,16,16" />
+    <EntityInfo Key="118" Name="Curly (boss)" Rect="0,32,32,24" />
+    <EntityInfo Key="119" Name="Table &amp; Chair" Rect="248,184,24,16" />
+    <EntityInfo Key="120" Name="Colon, 1" Rect="0,0,16,16" />
+    <EntityInfo Key="121" Name="Colon, 2" Rect="64,16,16,16" />
+    <EntityInfo Key="122" Name="Colon (enemy)" Rect="80,0,16,16" />
+    <EntityInfo Key="123" Name="Curly Machine Gun bullet (projectile)" Rect="192,0,16,16" />
+    <EntityInfo Key="124" Name="Sunstone" Rect="192,0,31,32" />
+    <EntityInfo Key="125" Name="Hidden Heart/Missile" Rect="144,200,16,16" />
+    <EntityInfo Key="126" Name="Puppy, running" Rect="24,72,8,8" />
+    <EntityInfo Key="127" Name="Machine Gun trail, Lv2 (projectile)" Rect="64,86,48,4" />
+    <EntityInfo Key="128" Name="Machine Gun trail, Lv3 (projectile)" Rect="0,0,0,0" />
+    <EntityInfo Key="129" Name="Fireball/Snake trail (projectile)" Rect="0,0,0,0" />
+    <EntityInfo Key="130" Name="Puppy, wagging tail" Rect="48,144,16,16" />
+    <EntityInfo Key="131" Name="Puppy, sleeping" Rect="144,144,16,16" />
+    <EntityInfo Key="132" Name="Puppy, barking" Rect="128,144,16,16" />
+    <EntityInfo Key="133" Name="Jenka" Rect="176,32,16,16" />
+    <EntityInfo Key="134" Name="Armadillo (enemy)" Rect="224,0,32,16" />
+    <EntityInfo Key="135" Name="Skeleton (enemy)" Rect="288,32,32,32" />
+    <EntityInfo Key="136" Name="Puppy, carried" Rect="48,144,16,16" />
+    <EntityInfo Key="137" Name="Doorway, open" Rect="96,136,32,32" />
+    <EntityInfo Key="138" Name="Doorway, closed doors" Rect="96,112,32,24" />
+    <EntityInfo Key="139" Name="Doctor, with crown" Rect="0,128,24,32" />
+    <EntityInfo Key="140" Name="Frenzied Toroko (boss)" Rect="0,0,32,32" />
+    <EntityInfo Key="141" Name="Toroko block (projectile)" Rect="288,32,16,16" />
+    <EntityInfo Key="142" Name="Flower Cub (enemy)" Rect="0,128,16,16" />
+    <EntityInfo Key="143" Name="Jenka, collapsed" Rect="208,32,47,16" />
+    <EntityInfo Key="144" Name="Toroko, teleporting in" Rect="32,64,16,16" />
+    <EntityInfo Key="145" Name="King, struck by lightning" Rect="0,0,0,0" />
+    <EntityInfo Key="146" Name="Lightning" Rect="304,208,16,32" />
+    <EntityInfo Key="147" Name="Critter, Hovering Purple (enemy)" Rect="0,96,16,16" />
+    <EntityInfo Key="148" Name="Critter purple ball (projectile)" Rect="96,96,8,8" />
+    <EntityInfo Key="149" Name="Moving Block, Horizontal" Rect="16,0,32,32" />
+    <EntityInfo Key="150" Name="Quote" Rect="0,0,16,16" />
+    <EntityInfo Key="151" Name="Blue Robot" Rect="192,0,16,16" />
+    <EntityInfo Key="152" Name="Shutter, stuck (enemy)" Rect="96,64,16,32" />
+    <EntityInfo Key="153" Name="Gaudi (enemy)" Rect="0,0,24,24" />
+    <EntityInfo Key="154" Name="Gaudi, dying" Rect="192,0,24,24" />
+    <EntityInfo Key="155" Name="Gaudi, flying (enemy)" Rect="0,48,24,24" />
+    <EntityInfo Key="156" Name="Gaudi spitball (projectile)" Rect="96,112,16,16" />
+    <EntityInfo Key="157" Name="Moving Block, Vertical" Rect="16,0,32,32" />
+    <EntityInfo Key="158" Name="Fish Missile, Green (enemy)" Rect="0,224,16,16" />
+    <EntityInfo Key="159" Name="Falling Cat, Monster X" Rect="144,131,48,68" />
+    <EntityInfo Key="160" Name="Puu Black (boss)" Rect="0,0,40,24" />
+    <EntityInfo Key="161" Name="Puu Black bubble (projectile)" Rect="0,48,16,16" />
+    <EntityInfo Key="162" Name="Puu Black, dying" Rect="40,0,40,24" />
+    <EntityInfo Key="163" Name="Dr. Gero" Rect="192,0,16,16" />
+    <EntityInfo Key="164" Name="Nurse Hasumi" Rect="224,0,16,16" />
+    <EntityInfo Key="165" Name="Curly, sleeping" Rect="224,96,16,16" />
+    <EntityInfo Key="166" Name="Chaba" Rect="146,106,35,21" />
+    <EntityInfo Key="167" Name="Professor Booster, falling" Rect="304,0,16,16" />
+    <EntityInfo Key="168" Name="Boulder" Rect="263,57,57,39" />
+    <EntityInfo Key="169" Name="Balrog, Missiles (boss)" Rect="0,0,40,24" />
+    <EntityInfo Key="170" Name="Balrog missile (projectile)" Rect="112,96,16,8" />
+    <EntityInfo Key="171" Name="Fire Whirrr (enemy)" Rect="122,48,32,32" />
+    <EntityInfo Key="172" Name="Fire Ring (projectile)" Rect="248,48,16,32" />
+    <EntityInfo Key="173" Name="Gaudi, armor" Rect="0,128,24,24" />
+    <EntityInfo Key="174" Name="Gaudi Blade (projectile)" Rect="120,80,16,16" />
+    <EntityInfo Key="175" Name="Gaudi Egg (enemy)" Rect="168,80,24,24" />
+    <EntityInfo Key="176" Name="Buyobuyo Base (enemy)" Rect="96,128,32,16" />
+    <EntityInfo Key="177" Name="Buyobuyo (enemy)" Rect="192,144,16,16" />
+    <EntityInfo Key="178" Name="Core Blade (projectile)" Rect="0,224,16,16" />
+    <EntityInfo Key="179" Name="Core Wisp (projectile)" Rect="48,224,24,16" />
+    <EntityInfo Key="180" Name="Curly, AI" Rect="0,96,16,16" />
+    <EntityInfo Key="181" Name="CurlyAI Machine Gun" Rect="0,0,0,0" />
+    <EntityInfo Key="182" Name="CurlyAI Polar Star" Rect="0,0,0,0" />
+    <EntityInfo Key="183" Name="Curly Air Tank bubble" Rect="32,216,23,24" />
+    <EntityInfo Key="184" Name="Shutter, large" Rect="0,64,32,32" />
+    <EntityInfo Key="185" Name="Shutter, small" Rect="96,64,16,32" />
+    <EntityInfo Key="186" Name="Lift Block" Rect="48,48,16,16" />
+    <EntityInfo Key="187" Name="Fuzz Core (enemy)" Rect="224,104,32,32" />
+    <EntityInfo Key="188" Name="Fuzz (enemy)" Rect="288,104,16,16" />
+    <EntityInfo Key="189" Name="Homing Flame (enemy)" Rect="48,224,16,16" />
+    <EntityInfo Key="190" Name="Surface Robot" Rect="192,32,16,16" />
+    <EntityInfo Key="191" Name="Water Level" Rect="0,208,16,16" />
+    <EntityInfo Key="192" Name="Scooter" Rect="225,64,29,16" />
+    <EntityInfo Key="193" Name="Scooter, crashed" Rect="255,95,64,17" />
+    <EntityInfo Key="194" Name="Blue Robot, destroyed" Rect="192,112,33,15" />
+    <EntityInfo Key="195" Name="Grate Mouth" Rect="112,64,15,16" />
+    <EntityInfo Key="196" Name="Moving Wall, visual" Rect="128,32,16,16" />
+    <EntityInfo Key="197" Name="Porcupine Fish (enemy)" Rect="0,0,16,16" />
+    <EntityInfo Key="198" Name="IronHead red ring (projectile)" Rect="240,46,-35,25" />
+    <EntityInfo Key="199" Name="Underwater current, visual" Rect="224,50,16,14" />
+    <EntityInfo Key="200" Name="Dragon Zombie (enemy)" Rect="0,0,40,40" />
+    <EntityInfo Key="201" Name="Dragon Zombie, dead" Rect="200,20,42,16" />
+    <EntityInfo Key="202" Name="Dragon Zombie fire (projectile)" Rect="182,216,18,23" />
+    <EntityInfo Key="203" Name="Critter, Hopping Aqua (enemy)" Rect="0,80,16,16" />
+    <EntityInfo Key="204" Name="Falling Spike, small" Rect="240,144,16,16" />
+    <EntityInfo Key="205" Name="Falling Spike, large" Rect="128,80,16,32" />
+    <EntityInfo Key="206" Name="Counter Bomb (enemy)" Rect="80,80,40,44" />
+    <EntityInfo Key="207" Name="Countdown Speech Bubble (projectile)" Rect="0,144,16,13" />
+    <EntityInfo Key="208" Name="Basu, 2 (enemy)" Rect="248,80,24,22" />
+    <EntityInfo Key="209" Name="Basu energy ball, 2 (projectile)" Rect="200,112,16,16" />
+    <EntityInfo Key="210" Name="Beetle, Follow Aqua (enemy)" Rect="0,112,16,16" />
+    <EntityInfo Key="211" Name="Spikes (small)" Rect="256,200,16,16" />
+    <EntityInfo Key="212" Name="Sky Dragon" Rect="160,160,37,32" />
+    <EntityInfo Key="213" Name="Night Spirit (enemy)" Rect="0,0,48,48" />
+    <EntityInfo Key="214" Name="Night Spirit balloon (projectile)" Rect="144,48,32,16" />
+    <EntityInfo Key="215" Name="Sandcroc, White (enemy)" Rect="0,120,48,8" />
+    <EntityInfo Key="216" Name="Debug Cat" Rect="256,200,16,16" />
+    <EntityInfo Key="217" Name="Itoh" Rect="144,64,16,16" />
+    <EntityInfo Key="218" Name="Core large energy ball (projectile)" Rect="0,0,0,0" />
+    <EntityInfo Key="219" Name="Generator - Smoke/Underwater Current" Rect="16,0,16,16" />
+    <EntityInfo Key="220" Name="Shovel Brigade, standing" Rect="0,64,16,16" />
+    <EntityInfo Key="221" Name="Shovel Brigade, walking" Rect="0,64,16,16" />
+    <EntityInfo Key="222" Name="Prison bars" Rect="96,168,16,32" />
+    <EntityInfo Key="223" Name="Momorin" Rect="80,194,16,22" />
+    <EntityInfo Key="224" Name="Chie" Rect="112,32,16,16" />
+    <EntityInfo Key="225" Name="Megane" Rect="64,64,16,16" />
+    <EntityInfo Key="226" Name="Kanpachi, standing" Rect="272,32,24,24" />
+    <EntityInfo Key="227" Name="Bucket" Rect="208,32,16,16" />
+    <EntityInfo Key="228" Name="Droll, guarding" Rect="0,0,32,42" />
+    <EntityInfo Key="229" Name="Red Flowers, small" Rect="0,100,16,12" />
+    <EntityInfo Key="230" Name="Red Flowers, large" Rect="100,100,28,28" />
+    <EntityInfo Key="231" Name="Rocket" Rect="176,32,32,16" />
+    <EntityInfo Key="232" Name="Orangebell (enemy)" Rect="128,0,32,32" />
+    <EntityInfo Key="233" Name="Orangebell bat (enemy)" Rect="0,0,0,0" />
+    <EntityInfo Key="234" Name="Red Flowers, picked" Rect="144,100,28,12" />
+    <EntityInfo Key="235" Name="Midorin (enemy)" Rect="192,100,16,12" />
+    <EntityInfo Key="236" Name="Gunfish (enemy)" Rect="128,60,26,28" />
+    <EntityInfo Key="237" Name="Gunfish bubble (projectile)" Rect="312,32,7,8" />
+    <EntityInfo Key="238" Name="Killer Press (enemy)" Rect="184,200,24,16" />
+    <EntityInfo Key="239" Name="Cage bars" Rect="96,111,48,33" />
+    <EntityInfo Key="240" Name="Mimiga (wandering)" Rect="0,64,16,16" />
+    <EntityInfo Key="241" Name="Critter, Hopping Red (enemy)" Rect="0,0,16,16" />
+    <EntityInfo Key="242" Name="Bat, Red Wave (enemy)" Rect="0,32,16,16" />
+    <EntityInfo Key="243" Name="Generator - Red Bat" Rect="0,32,16,16" />
+    <EntityInfo Key="244" Name="Lava Drop (projectile)" Rect="96,0,6,16" />
+    <EntityInfo Key="245" Name="Generator - Lava Drop" Rect="96,0,6,16" />
+    <EntityInfo Key="246" Name="Press, Proximity (enemy)" Rect="144,112,16,24" />
+    <EntityInfo Key="247" Name="Misery (boss)" Rect="0,0,16,16" />
+    <EntityInfo Key="248" Name="Misery black ring (projectile)" Rect="0,0,16,16" />
+    <EntityInfo Key="249" Name="Misery, teleporting out" Rect="32,32,16,16" />
+    <EntityInfo Key="250" Name="Misery black lightning ball (projectile)" Rect="0,32,16,16" />
+    <EntityInfo Key="251" Name="Misery black lightning (projectile)" Rect="80,32,16,32" />
+    <EntityInfo Key="252" Name="Misery black orbiting rings (projectile)" Rect="0,0,0,0" />
+    <EntityInfo Key="253" Name="Energy Capsule " Rect="0,64,16,16" />
+    <EntityInfo Key="254" Name="Helicopter" Rect="0,0,128,64" />
+    <EntityInfo Key="255" Name="Helicopter Blades" Rect="0,0,0,0" />
+    <EntityInfo Key="256" Name="Doctor, facing away" Rect="48,160,24,32" />
+    <EntityInfo Key="257" Name="Red Crystal" Rect="176,32,7,16" />
+    <EntityInfo Key="258" Name="Mimiga, sleeping" Rect="48,32,16,16" />
+    <EntityInfo Key="259" Name="Curly, carried" Rect="160,96,16,16" />
+    <EntityInfo Key="260" Name="Shovel Brigade, caged" Rect="0,64,16,16" />
+    <EntityInfo Key="261" Name="Chie, caged" Rect="112,32,16,16" />
+    <EntityInfo Key="262" Name="Chaco, caged" Rect="128,0,16,16" />
+    <EntityInfo Key="263" Name="Doctor (boss)" Rect="182,160,26,32" />
+    <EntityInfo Key="264" Name="Doctor red wave (projectile)" Rect="286,0,16,16" />
+    <EntityInfo Key="265" Name="Doctor red ball (projectile)" Rect="286,0,16,16" />
+    <EntityInfo Key="266" Name="Doctor red ball, bouncing (projectile)" Rect="286,0,16,16" />
+    <EntityInfo Key="267" Name="Muscle Doctor (boss)" Rect="0,64,40,48" />
+    <EntityInfo Key="268" Name="Igor (enemy)" Rect="0,0,40,40" />
+    <EntityInfo Key="269" Name="Bat, Red Bouncing (enemy)" Rect="232,0,16,16" />
+    <EntityInfo Key="270" Name="Red Energy/Blood" Rect="168,32,6,8" />
+    <EntityInfo Key="271" Name="Underwater Block" Rect="128,16,16,16" />
+    <EntityInfo Key="272" Name="Generator - Underwater Block" Rect="128,16,16,16" />
+    <EntityInfo Key="273" Name="Droll blade (projectile)" Rect="248,40,24,24" />
+    <EntityInfo Key="274" Name="Droll (enemy)" Rect="0,0,32,42" />
+    <EntityInfo Key="275" Name="Puppy, sitting" Rect="48,144,16,16" />
+    <EntityInfo Key="276" Name="Red Demon (boss)" Rect="0,64,32,38" />
+    <EntityInfo Key="277" Name="Red Demon blade (projectile)" Rect="128,0,22,24" />
+    <EntityInfo Key="278" Name="Little Family" Rect="0,120,6,8" />
+    <EntityInfo Key="279" Name="Falling Block" Rect="0,16,32,32" />
+    <EntityInfo Key="280" Name="Sue, teleporting in" Rect="112,32,15,16" />
+    <EntityInfo Key="281" Name="Doctor, Red Energy Form" Rect="183,160,25,32" />
+    <EntityInfo Key="282" Name="Mini Undead Core, moving" Rect="256,120,64,40" />
+    <EntityInfo Key="283" Name="Misery, Puppet (enemy)" Rect="0,64,32,32" />
+    <EntityInfo Key="284" Name="Frenzied Sue (enemy)" Rect="0,128,32,32" />
+    <EntityInfo Key="285" Name="Undead Core flame spiral (projectile)" Rect="0,224,16,16" />
+    <EntityInfo Key="286" Name="Undead Core flame spiral trail (projectile)" Rect="232,105,15,14" />
+    <EntityInfo Key="287" Name="Orange Smoke" Rect="48,224,16,-5" />
+    <EntityInfo Key="288" Name="Undead Core exploding rock (projectile)" Rect="232,71,16,17" />
+    <EntityInfo Key="289" Name="Critter, Hopping Orange, disappears (enemy)" Rect="160,32,16,16" />
+    <EntityInfo Key="290" Name="Bat, Fast Orange, disappears (enemy)" Rect="112,32,16,16" />
+    <EntityInfo Key="291" Name="Mini Undead Core, stationary" Rect="256,0,64,40" />
+    <EntityInfo Key="292" Name="Quake" Rect="0,0,0,0" />
+    <EntityInfo Key="293" Name="Undead Core large energy ball (projectile)" Rect="280,200,40,40" />
+    <EntityInfo Key="294" Name="Generator - Falling Block" Rect="0,16,32,32" />
+    <EntityInfo Key="295" Name="Cloud" Rect="144,112,48,30" />
+    <EntityInfo Key="296" Name="Generator - Cloud" Rect="0,0,0,0" />
+    <EntityInfo Key="297" Name="Sue, on sky dragon" Rect="0,0,0,0" />
+    <EntityInfo Key="298" Name="Doctor, without crown" Rect="100,160,20,32" />
+    <EntityInfo Key="299" Name="Balrog/Misery in bubble" Rect="0,0,48,48" />
+    <EntityInfo Key="300" Name="Demon Crown" Rect="192,80,16,16" />
+    <EntityInfo Key="301" Name="Fish Missile, Orange (enemy)" Rect="143,0,16,16" />
+    <EntityInfo Key="302" Name="Camera Focus Marker" Rect="0,0,0,0" />
+    <EntityInfo Key="303" Name="UNUSED/DOES NOTHING (Old Version of Curly's Gun?)" Rect="0,0,0,0" />
+    <EntityInfo Key="304" Name="Gaudi, sitting" Rect="0,176,24,16" />
+    <EntityInfo Key="305" Name="Puppy, small" Rect="160,150,16,10" />
+    <EntityInfo Key="306" Name="Balrog, nurse" Rect="240,100,40,28" />
+    <EntityInfo Key="307" Name="Santa, caged" Rect="0,32,16,16" />
+    <EntityInfo Key="308" Name="Stumpy (enemy)" Rect="126,114,16,16" />
+    <EntityInfo Key="309" Name="Bute, flying, 1 (enemy)" Rect="0,0,16,16" />
+    <EntityInfo Key="310" Name="Bute, sword (enemy)" Rect="32,0,22,16" />
+    <EntityInfo Key="311" Name="Bute, archer (enemy)" Rect="0,32,24,24" />
+    <EntityInfo Key="312" Name="Bute arrow (projectile)" Rect="0,160,16,16" />
+    <EntityInfo Key="313" Name="Ma Pignon (boss)" Rect="128,0,16,16" />
+    <EntityInfo Key="314" Name="Ma Pignon rock (projectile)" Rect="0,0,0,0" />
+    <EntityInfo Key="315" Name="Ma Pignon clone (enemy)" Rect="0,0,0,0" />
+    <EntityInfo Key="316" Name="Bute, dying" Rect="271,41,22,14" />
+    <EntityInfo Key="317" Name="Mesa (enemy)" Rect="0,80,32,38" />
+    <EntityInfo Key="318" Name="Mesa, dying" Rect="224,80,32,40" />
+    <EntityInfo Key="319" Name="Mesa block (projectile)" Rect="0,0,0,0" />
+    <EntityInfo Key="320" Name="Curly, carried, shooting" Rect="0,96,16,16" />
+    <EntityInfo Key="321" Name="Curly Nemesis bullet spawner (projectile)" Rect="0,0,0,0" />
+    <EntityInfo Key="322" Name="Deleet (enemy)" Rect="160,216,22,23" />
+    <EntityInfo Key="323" Name="Bute, spawned (enemy)" Rect="216,32,16,22" />
+    <EntityInfo Key="324" Name="Generator - Bute" Rect="216,32,16,22" />
+    <EntityInfo Key="325" Name="Heavy Press lightning (projectile)" Rect="238,0,17,96" />
+    <EntityInfo Key="326" Name="Itoh/Sue turning human" Rect="97,128,63,26" />
+    <EntityInfo Key="327" Name="Itoh/Sue 'Ah Choo!'" Rect="0,0,0,0" />
+    <EntityInfo Key="328" Name="Transmogrifier" Rect="96,0,32,48" />
+    <EntityInfo Key="329" Name="Building fan" Rect="48,0,16,16" />
+    <EntityInfo Key="330" Name="Rolling (enemy)" Rect="144,136,16,16" />
+    <EntityInfo Key="331" Name="Ballos bone (projectile)" Rect="288,80,16,16" />
+    <EntityInfo Key="332" Name="Ballos shockwave (projectile)" Rect="0,0,0,0" />
+    <EntityInfo Key="333" Name="Ballos lightning target (projectile)" Rect="260,0,11,240" />
+    <EntityInfo Key="334" Name="Water Drop, 2" Rect="0,0,0,0" />
+    <EntityInfo Key="335" Name="Ikachan" Rect="0,16,16,16" />
+    <EntityInfo Key="336" Name="Generator - Ikachan" Rect="0,16,16,16" />
+    <EntityInfo Key="337" Name="Numahachi" Rect="256,112,32,38" />
+    <EntityInfo Key="338" Name="Green Devil (enemy)" Rect="283,0,19,16" />
+    <EntityInfo Key="339" Name="Generator - Green Devil" Rect="0,0,0,0" />
+    <EntityInfo Key="340" Name="Ballos (boss)" Rect="0,0,44,40" />
+    <EntityInfo Key="341" Name="Ballos 1 head" Rect="0,0,0,0" />
+    <EntityInfo Key="342" Name="Ballos 3 eyeball (enemy)" Rect="0,0,0,0" />
+    <EntityInfo Key="343" Name="Ballos 2 cutscene" Rect="0,0,0,0" />
+    <EntityInfo Key="344" Name="Ballos 2 eyes" Rect="0,0,0,0" />
+    <EntityInfo Key="345" Name="Ballos 3 skull (projectile)" Rect="128,176,16,16" />
+    <EntityInfo Key="346" Name="Ballos 4 orbiting platform" Rect="0,0,0,0" />
+    <EntityInfo Key="347" Name="Hoppy (enemy)" Rect="256,48,16,16" />
+    <EntityInfo Key="348" Name="Ballos 4 spikes" Rect="126,151,18,25" />
+    <EntityInfo Key="349" Name="Statue" Rect="32,100,32,44" />
+    <EntityInfo Key="350" Name="Bute, flying archer (enemy)" Rect="49,162,21,20" />
+    <EntityInfo Key="351" Name="Statue (enemy)" Rect="0,0,0,0" />
+    <EntityInfo Key="352" Name="Credits-Drop Universal NPC" Rect="224,32,14,16" />
+    <EntityInfo Key="353" Name="Bute, flying, 2 (enemy)" Rect="198,158,18,18" />
+    <EntityInfo Key="354" Name="Invisible deathtrap wall" Rect="0,0,0,0" />
+    <EntityInfo Key="355" Name="Balrog, crashing through wall" Rect="0,0,0,0" />
+    <EntityInfo Key="356" Name="Balrog, rescue" Rect="0,0,40,24" />
+    <EntityInfo Key="357" Name="Puppy, ghost" Rect="224,137,16,16" />
+    <EntityInfo Key="358" Name="Misery, tall, wind" Rect="208,10,14,22" />
+    <EntityInfo Key="359" Name="Generator - Water Drop" Rect="72,16,2,2" />
+    <EntityInfo Key="360" Name="Text, 'Thank You!'" Rect="0,176,48,7" />
+  </EntityInfoList>
+  <SurfaceList>
+    <SurfaceDescriptor Key="0" Type="File" Prefix="None" Folder="Data" Filename="Title">Title.pbm</SurfaceDescriptor>
+    <SurfaceDescriptor Key="1" Type="Runtime">Bitmap/PIXEL (Resource)</SurfaceDescriptor>
+    <SurfaceDescriptor Key="2" Type="Index" Index="0">&lt;Current Tileset&gt;</SurfaceDescriptor>
+    <SurfaceDescriptor Key="6" Type="File" Prefix="None" Folder="Data" Filename="Fade">Fade.pbm</SurfaceDescriptor>
+    <SurfaceDescriptor Key="8" Type="File" Prefix="None" Folder="Data" Filename="ItemImage">ItemImage.pbm</SurfaceDescriptor>
+    <SurfaceDescriptor Key="9" Type="Runtime">Map System Buffer</SurfaceDescriptor>
+    <SurfaceDescriptor Key="10" Type="Runtime">Screen Buffer</SurfaceDescriptor>
+    <SurfaceDescriptor Key="11" Type="File" Prefix="None" Folder="Data" Filename="Arms">Arms.pbm</SurfaceDescriptor>
+    <SurfaceDescriptor Key="12" Type="File" Prefix="None" Folder="Data" Filename="ArmsImage">ArmsImage.pbm</SurfaceDescriptor>
+    <SurfaceDescriptor Key="13" Type="Runtime">&lt;MNA Buffer</SurfaceDescriptor>
+    <SurfaceDescriptor Key="14" Type="File" Prefix="None" Folder="Data" Filename="StageImage">StageImage.pbm</SurfaceDescriptor>
+    <SurfaceDescriptor Key="15" Type="File" Prefix="None" Folder="Data" Filename="Loading">Loading.pbm</SurfaceDescriptor>
+    <SurfaceDescriptor Key="16" Type="File" Prefix="None" Folder="Data" Filename="MyChar">MyChar.pbm</SurfaceDescriptor>
+    <SurfaceDescriptor Key="17" Type="File" Prefix="None" Folder="Data" Filename="Bullet">Bullet.pbm</SurfaceDescriptor>
+    <SurfaceDescriptor Key="19" Type="File" Prefix="None" Folder="Data" Filename="Caret">Caret.pbm</SurfaceDescriptor>
+    <SurfaceDescriptor Key="20" Type="File" Prefix="Spritesheet" Folder="Npc" Filename="Sym">NpcSym.pbm</SurfaceDescriptor>
+    <SurfaceDescriptor Key="21" Type="Index" Index="2">&lt;Spritesheet 1&gt;</SurfaceDescriptor>
+    <SurfaceDescriptor Key="22" Type="Index" Index="3">&lt;Spritesheet 2&gt;</SurfaceDescriptor>
+    <SurfaceDescriptor Key="23" Type="File" Prefix="Spritesheet" Folder="Npc" Filename="Regu">NpcRegu.pbm</SurfaceDescriptor>
+    <SurfaceDescriptor Key="26" Type="File" Prefix="None" Folder="Data" Filename="TextBox">TextBox.pbm</SurfaceDescriptor>
+    <SurfaceDescriptor Key="27" Type="File" Prefix="None" Folder="Data" Filename="Face">Face.pbm</SurfaceDescriptor>
+    <SurfaceDescriptor Key="28" Type="Index" Index="1">&lt;Current Background&gt;</SurfaceDescriptor>
+    <SurfaceDescriptor Key="29" Type="Runtime">Damage Number Buffer</SurfaceDescriptor>
+    <SurfaceDescriptor Key="30" Type="Runtime">Text Line 1</SurfaceDescriptor>
+    <SurfaceDescriptor Key="31" Type="Runtime">Text Line 2</SurfaceDescriptor>
+    <SurfaceDescriptor Key="32" Type="Runtime">Text Line 3</SurfaceDescriptor>
+    <SurfaceDescriptor Key="33" Type="Runtime">Text Line 4</SurfaceDescriptor>
+    <SurfaceDescriptor Key="34" Type="Runtime">Text Line 5</SurfaceDescriptor>
+    <SurfaceDescriptor Key="35" Type="Runtime">Credits Text Buffer</SurfaceDescriptor>
+    <SurfaceDescriptor Key="36" Type="Runtime">Credits Image Buffer</SurfaceDescriptor>
+    <SurfaceDescriptor Key="37" Type="File" Prefix="None" Folder="Data" Filename="casts">Casts.pbm</SurfaceDescriptor>
+    <SurfaceDescriptor Key="40" Type="Runtime">MAX</SurfaceDescriptor>
+  </SurfaceList>
+  <SoundEffects>
+    <SoundEffect Key="0">Silent</SoundEffect>
+    <SoundEffect Key="1">Y/N Change Choice</SoundEffect>
+    <SoundEffect Key="2">Message Typing</SoundEffect>
+    <SoundEffect Key="3">PC Bump Head</SoundEffect>
+    <SoundEffect Key="4">Switch Weapon</SoundEffect>
+    <SoundEffect Key="5">Y/N Prompt</SoundEffect>
+    <SoundEffect Key="6">High Pitch Critter Hop</SoundEffect>
+    <SoundEffect Key="7">Silent</SoundEffect>
+    <SoundEffect Key="8">Silent</SoundEffect>
+    <SoundEffect Key="9">Silent</SoundEffect>
+    <SoundEffect Key="10">Silent</SoundEffect>
+    <SoundEffect Key="11">Door Open</SoundEffect>
+    <SoundEffect Key="12">Destroy Breakable Block</SoundEffect>
+    <SoundEffect Key="13">Silent</SoundEffect>
+    <SoundEffect Key="14">Get EXP</SoundEffect>
+    <SoundEffect Key="15">PC Jump</SoundEffect>
+    <SoundEffect Key="16">PC Hurt</SoundEffect>
+    <SoundEffect Key="17">PC Die</SoundEffect>
+    <SoundEffect Key="18">Y/N Confirm</SoundEffect>
+    <SoundEffect Key="19">Silent</SoundEffect>
+    <SoundEffect Key="20">PC Heal</SoundEffect>
+    <SoundEffect Key="21">Bubble</SoundEffect>
+    <SoundEffect Key="22">Chest Open</SoundEffect>
+    <SoundEffect Key="23">PC Hit Ground</SoundEffect>
+    <SoundEffect Key="24">PC Walk</SoundEffect>
+    <SoundEffect Key="25">Silly Explosion</SoundEffect>
+    <SoundEffect Key="26">Large Object Hit Ground</SoundEffect>
+    <SoundEffect Key="27">Level Up!</SoundEffect>
+    <SoundEffect Key="28">Shot Hit Wall</SoundEffect>
+    <SoundEffect Key="29">Teleport</SoundEffect>
+    <SoundEffect Key="30">Critter Hop</SoundEffect>
+    <SoundEffect Key="31">Shot Hit Invulnerable Entity</SoundEffect>
+    <SoundEffect Key="32">Polar Star Shoot Level 1/2</SoundEffect>
+    <SoundEffect Key="33">Fireball Shoot</SoundEffect>
+    <SoundEffect Key="34">Fireball Bounce</SoundEffect>
+    <SoundEffect Key="35">large Explosion</SoundEffect>
+    <SoundEffect Key="36">Silent</SoundEffect>
+    <SoundEffect Key="37">No Ammo</SoundEffect>
+    <SoundEffect Key="38">Item Get</SoundEffect>
+    <SoundEffect Key="39">Enemy Shoot Projectile</SoundEffect>
+    <SoundEffect Key="40">Stream Noise (&lt;SSS)</SoundEffect>
+    <SoundEffect Key="41">Stream Noise (&lt;SSS)</SoundEffect>
+    <SoundEffect Key="42">PC Missile Get</SoundEffect>
+    <SoundEffect Key="43">Computer Screen On</SoundEffect>
+    <SoundEffect Key="44">Missile Impact</SoundEffect>
+    <SoundEffect Key="45">EXP Bounce</SoundEffect>
+    <SoundEffect Key="46">Iron Head Shot</SoundEffect>
+    <SoundEffect Key="47">Strange Click</SoundEffect>
+    <SoundEffect Key="48">Bubbler Shoot</SoundEffect>
+    <SoundEffect Key="49">Polar Star Shoot Level 3</SoundEffect>
+    <SoundEffect Key="50">Toroko/Enemy Squeal</SoundEffect>
+    <SoundEffect Key="51">Critter/Small Hurt</SoundEffect>
+    <SoundEffect Key="52">Behemoth/Large Hurt</SoundEffect>
+    <SoundEffect Key="53">Gaudi Die</SoundEffect>
+    <SoundEffect Key="54">Heavy Press/Large Object Hurt</SoundEffect>
+    <SoundEffect Key="55">High Pitched Gaudi Die</SoundEffect>
+    <SoundEffect Key="56">Water Splash</SoundEffect>
+    <SoundEffect Key="57">Curly/Object Hurt</SoundEffect>
+    <SoundEffect Key="58">Helicopter Blades (&lt;SPS)</SoundEffect>
+    <SoundEffect Key="59">Spur Charge Level 1</SoundEffect>
+    <SoundEffect Key="60">Spur Charge Level 2</SoundEffect>
+    <SoundEffect Key="61">Spur Charge Level 3</SoundEffect>
+    <SoundEffect Key="62">Spur Shoot Level 1</SoundEffect>
+    <SoundEffect Key="63">Spur Shoot Level 2</SoundEffect>
+    <SoundEffect Key="64">Spur Shoot Level 3</SoundEffect>
+    <SoundEffect Key="65">Spur Charge MAX</SoundEffect>
+    <SoundEffect Key="66">Silence</SoundEffect>
+    <SoundEffect Key="67">Silence</SoundEffect>
+    <SoundEffect Key="68">Silence</SoundEffect>
+    <SoundEffect Key="69">Silence</SoundEffect>
+    <SoundEffect Key="70">Enemy Smoke Poof</SoundEffect>
+    <SoundEffect Key="71">PC Smash Into Ground</SoundEffect>
+    <SoundEffect Key="72">Explosion</SoundEffect>
+    <SoundEffect Key="73">Silence</SoundEffect>
+    <SoundEffect Key="74">Silence</SoundEffect>
+    <SoundEffect Key="75">Silence</SoundEffect>
+    <SoundEffect Key="76">Silence</SoundEffect>
+    <SoundEffect Key="77">Silence</SoundEffect>
+    <SoundEffect Key="78">Silence</SoundEffect>
+    <SoundEffect Key="79">Silence</SoundEffect>
+    <SoundEffect Key="80">Silence</SoundEffect>
+    <SoundEffect Key="81">Silence</SoundEffect>
+    <SoundEffect Key="82">Silence</SoundEffect>
+    <SoundEffect Key="83">Silence</SoundEffect>
+    <SoundEffect Key="84">Silence</SoundEffect>
+    <SoundEffect Key="85">Silence</SoundEffect>
+    <SoundEffect Key="86">Silence</SoundEffect>
+    <SoundEffect Key="87">Silence</SoundEffect>
+    <SoundEffect Key="88">Silence</SoundEffect>
+    <SoundEffect Key="89">Silence</SoundEffect>
+    <SoundEffect Key="90">Silence</SoundEffect>
+    <SoundEffect Key="91">Silence</SoundEffect>
+    <SoundEffect Key="92">Silence</SoundEffect>
+    <SoundEffect Key="93">Silence</SoundEffect>
+    <SoundEffect Key="94">Silence</SoundEffect>
+    <SoundEffect Key="95">Silence</SoundEffect>
+    <SoundEffect Key="96">Silence</SoundEffect>
+    <SoundEffect Key="97">Silence</SoundEffect>
+    <SoundEffect Key="98">Silence</SoundEffect>
+    <SoundEffect Key="99">Silence</SoundEffect>
+    <SoundEffect Key="100">Bubbler Shoot Level 3</SoundEffect>
+    <SoundEffect Key="101">Lightning</SoundEffect>
+    <SoundEffect Key="102">Sand Croc</SoundEffect>
+    <SoundEffect Key="103">Ballos Ball/etc. Charge</SoundEffect>
+    <SoundEffect Key="104">Secret Item Hurt</SoundEffect>
+    <SoundEffect Key="105">Puppy Bark</SoundEffect>
+    <SoundEffect Key="106">Spinning Projectile</SoundEffect>
+    <SoundEffect Key="107">Block Move</SoundEffect>
+    <SoundEffect Key="108">Power Critter/Large Enemy Jump</SoundEffect>
+    <SoundEffect Key="109">Critter Fly</SoundEffect>
+    <SoundEffect Key="110">Power Critter Flys</SoundEffect>
+    <SoundEffect Key="111">Thud</SoundEffect>
+    <SoundEffect Key="112">Large Thud</SoundEffect>
+    <SoundEffect Key="113">Booster</SoundEffect>
+    <SoundEffect Key="114">Core Hurt</SoundEffect>
+    <SoundEffect Key="115">Core Thrust</SoundEffect>
+    <SoundEffect Key="116">Core Charge</SoundEffect>
+    <SoundEffect Key="117">Nemesis Shoot</SoundEffect>
+    <SoundEffect Key="118">Silence</SoundEffect>
+    <SoundEffect Key="119">Silence</SoundEffect>
+    <SoundEffect Key="120">Silence</SoundEffect>
+    <SoundEffect Key="121">Silence</SoundEffect>
+    <SoundEffect Key="122">Silence</SoundEffect>
+    <SoundEffect Key="123">Silence</SoundEffect>
+    <SoundEffect Key="124">Silence</SoundEffect>
+    <SoundEffect Key="125">Silence</SoundEffect>
+    <SoundEffect Key="126">Silence</SoundEffect>
+    <SoundEffect Key="127">Silence</SoundEffect>
+    <SoundEffect Key="128">Silence</SoundEffect>
+    <SoundEffect Key="129">Silence</SoundEffect>
+    <SoundEffect Key="130">Silence</SoundEffect>
+    <SoundEffect Key="131">Silence</SoundEffect>
+    <SoundEffect Key="132">Silence</SoundEffect>
+    <SoundEffect Key="133">Silence</SoundEffect>
+    <SoundEffect Key="134">Silence</SoundEffect>
+    <SoundEffect Key="135">Silence</SoundEffect>
+    <SoundEffect Key="136">Silence</SoundEffect>
+    <SoundEffect Key="137">Silence</SoundEffect>
+    <SoundEffect Key="138">Silence</SoundEffect>
+    <SoundEffect Key="139">Silence</SoundEffect>
+    <SoundEffect Key="140">Silence</SoundEffect>
+    <SoundEffect Key="141">Silence</SoundEffect>
+    <SoundEffect Key="142">Silence</SoundEffect>
+    <SoundEffect Key="143">Silence</SoundEffect>
+    <SoundEffect Key="144">Silence</SoundEffect>
+    <SoundEffect Key="145">Silence</SoundEffect>
+    <SoundEffect Key="146">Silence</SoundEffect>
+    <SoundEffect Key="147">Silence</SoundEffect>
+    <SoundEffect Key="148">Silence</SoundEffect>
+    <SoundEffect Key="149">Silence</SoundEffect>
+    <SoundEffect Key="150">Bass (Bass01)</SoundEffect>
+    <SoundEffect Key="151">Snare (Snare01)</SoundEffect>
+    <SoundEffect Key="152">HiClose (HiClose)</SoundEffect>
+    <SoundEffect Key="153">HiOpen (HiOpen)</SoundEffect>
+    <SoundEffect Key="154">Tom (Tom01)</SoundEffect>
+    <SoundEffect Key="155">Per (Per01)</SoundEffect>
+    <SoundEffect Key="156">Silence</SoundEffect>
+    <SoundEffect Key="157">Silence</SoundEffect>
+    <SoundEffect Key="158">Silence</SoundEffect>
+    <SoundEffect Key="159">Silence</SoundEffect>
+    <SoundEffect Key="160">MAX</SoundEffect>
+  </SoundEffects>
+  <SmokeSizes>
+    <SmokeSize Key="0">None</SmokeSize>
+    <SmokeSize Key="1">Small</SmokeSize>
+    <SmokeSize Key="2">Medium</SmokeSize>
+    <SmokeSize Key="3">Large</SmokeSize>
+  </SmokeSizes>
+  <BossNumbers>
+    <BossNumber Key="0">None</BossNumber>
+    <BossNumber Key="1">Omega</BossNumber>
+    <BossNumber Key="2">Balfrog</BossNumber>
+    <BossNumber Key="3">Monster X</BossNumber>
+    <BossNumber Key="4">The Core</BossNumber>
+    <BossNumber Key="5">Ironhead</BossNumber>
+    <BossNumber Key="6">The Sisters</BossNumber>
+    <BossNumber Key="7">The Undead Core</BossNumber>
+    <BossNumber Key="8">Heavy Press</BossNumber>
+    <BossNumber Key="9">Ballos (Ball)</BossNumber>
+  </BossNumbers>
+  <BackgroundTypes>
+    <BackgroundType Key="0">Fixed To Camera</BackgroundType>
+    <BackgroundType Key="1">Follow Slowly</BackgroundType>
+    <BackgroundType Key="2">Fixed To Foreground</BackgroundType>
+    <BackgroundType Key="3">Water</BackgroundType>
+    <BackgroundType Key="4">No Draw</BackgroundType>
+    <BackgroundType Key="5">Scroll (Items)</BackgroundType>
+    <BackgroundType Key="6">Parallax (Items)</BackgroundType>
+    <BackgroundType Key="7">Parallax</BackgroundType>
+  </BackgroundTypes>
+</CaveStoryMod>
